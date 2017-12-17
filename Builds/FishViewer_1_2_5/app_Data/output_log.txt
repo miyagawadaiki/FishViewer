@@ -1,0 +1,552 @@
+Mono path[0] = 'C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Builds/FishViewer_1_2_5/app_Data/Managed'
+Mono path[1] = 'C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Builds/FishViewer_1_2_5/app_Data/Mono'
+Mono config path = 'C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Builds/FishViewer_1_2_5/app_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Builds/FishViewer_1_2_5/app_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55203
+Multi-casting "[IP] 192.168.13.1 [Port] 55203 [Flags] 2 [Guid] 2305146624 [EditorId] 552425071 [Version] 1048832 [Id] WindowsPlayer(Daiki-PC) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55203]
+PlayerConnection already initialized - listening to [0.0.0.0:55203]
+Player data archive not found at `C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Builds/FishViewer_1_2_5/app_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.2f1 (a2913c821e27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 750M (ID=0xfe4)
+    Vendor:   NVIDIA
+    VRAM:     1991 MB
+    Driver:   21.21.13.7651
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.261 seconds
+Platform assembly: C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Builds\FishViewer_1_2_5\app_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 3.460104 ms
+<color=green>Translate Scene : FileRead</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MySceneManager:GoFileRead() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\MySceneManager.cs:24)
+StartSceneController:GoFileRead() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Start\StartSceneController.cs:22)
+UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
+UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
+UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
+UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
+UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:35)
+UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:44)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:533)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:432)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:412)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:186)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:283)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/MySceneManager.cs Line: 24)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.472684 ms
+System memory in use before: 18.6 MB.
+System memory in use after: 18.7 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 355.
+Total: 0.520448 ms (FindLiveObjects: 0.047041 ms CreateObjectMapping: 0.021382 ms MarkObjects: 0.442616 ms  DeleteObjects: 0.008125 ms)
+
+<color=green>Translate Scene : Main</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MySceneManager:GoMain() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\MySceneManager.cs:8)
+FileReadManager:Read() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\FileRead\FileReadManager.cs:37)
+UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:154)
+UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:637)
+UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:773)
+UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:52)
+UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:35)
+UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:44)
+UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:261)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:533)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:432)
+UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:412)
+UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:186)
+UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:283)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/MySceneManager.cs Line: 8)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.802110 ms
+<color=green>Awake() in SimuManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+SimuManager:Awake()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+n_filename = C:/Users/Daiki/Desktop/卒研/解析ツール用/変換後データ/10-13-blue-kiseki_.csv
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+SimuManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\SimuManager.cs:38)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/SimuManager.cs Line: 38)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+<color=green>Awake() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Awake() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:62)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 62)
+
+System memory in use before: 31.3 MB.
+System memory in use after: 31.8 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 15102.
+Total: 5.847665 ms (FindLiveObjects: 1.299623 ms CreateObjectMapping: 0.293794 ms MarkObjects: 4.216186 ms  DeleteObjects: 0.035922 ms)
+
+<color=green>Start() in BottomGraphController</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphController:Start()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<color=green>Start() in RightGraphsManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+RightGraphsManager:Start()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+rect : (x:-195.00, y:-160.00, width:390.00, height:320.00)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+RightGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\RightGraphsManager.cs:45)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/RightGraphsManager.cs Line: 45)
+
+rect.size : (390.0, 320.0)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+RightGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\RightGraphsManager.cs:46)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/RightGraphsManager.cs Line: 46)
+
+<color=green>Start() in SimuManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+SimuManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\SimuManager.cs:76)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/SimuManager.cs Line: 76)
+
+<color=green>Start() in BottomGraphController</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphController:Start()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<color=green>Start() in BottomGraphController</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphController:Start()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in BottomGraphController</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphController:Start()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<color=green>Start() in BottomGraphsManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphsManager:Start()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+colors[0] : RGBA(1.000, 0.000, 0.000, 1.000)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\BottomGraphsManager.cs:35)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/BottomGraphsManager.cs Line: 35)
+
+colors[1] : RGBA(1.000, 0.212, 0.776, 1.000)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\BottomGraphsManager.cs:35)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/BottomGraphsManager.cs Line: 35)
+
+colors[2] : RGBA(1.000, 0.929, 0.000, 1.000)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\BottomGraphsManager.cs:35)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/BottomGraphsManager.cs Line: 35)
+
+colors[3] : RGBA(0.000, 1.000, 0.129, 1.000)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\BottomGraphsManager.cs:35)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/BottomGraphsManager.cs Line: 35)
+
+colors[4] : RGBA(0.118, 0.000, 1.000, 1.000)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\BottomGraphsManager.cs:35)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/BottomGraphsManager.cs Line: 35)
+
+rect : (x:-232.50, y:-143.00, width:465.00, height:286.00)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\BottomGraphsManager.cs:54)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/BottomGraphsManager.cs Line: 54)
+
+rect.size : (465.0, 286.0)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphsManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\BottomGraphsManager.cs:55)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/BottomGraphsManager.cs Line: 55)
+
+<color=green>Start() in MouseDragController</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MouseDragController:Start()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in GraphManager</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GraphManager:Start() (at C:\Users\Daiki\Desktop\Unity\FishViewer1_2\Assets\Scripts\Main\Graph\GraphManager.cs:70)
+ 
+(Filename: C:/Users/Daiki/Desktop/Unity/FishViewer1_2/Assets/Scripts/Main/Graph/GraphManager.cs Line: 70)
+
+<color=green>Start() in BottomGraphController</color>
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+BottomGraphController:Start()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2a18 -> priority: 1 
+  Thread -> id: 2a50 -> priority: 1 
+  Thread -> id: 22f4 -> priority: 1 
+  Thread -> id: 2514 -> priority: 1 

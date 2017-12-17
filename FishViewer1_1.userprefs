@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Main\Graph\GraphManager.cs">
+    <Files>
+      <File FileName="Assets\Scripts\MySceneManager.cs" Line="23" Column="31" />
+      <File FileName="Assets\Scripts\Start\StartSceneController.cs" Line="22" Column="32" />
+      <File FileName="Assets\Scripts\Main\MouseDragController.cs" Line="54" Column="73" />
+      <File FileName="Assets\Scripts\Main\Graph\GraphManager.cs" Line="57" Column="1" />
+      <File FileName="Assets\Scripts\Main\ExRateSliderController.cs" Line="38" Column="76" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

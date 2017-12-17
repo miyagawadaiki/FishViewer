@@ -1,0 +1,23 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Main\Graph\SimuManager.cs">
+    <Files>
+      <File FileName="Assets\Scripts\MySceneManager.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\DataType.cs" Line="13" Column="14" />
+      <File FileName="Assets\Scripts\ProjectData.cs" Line="16" Column="30" />
+      <File FileName="Assets\Scripts\FileMake\InputFieldInitializer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FileMake\FileMakeManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Making\ReadingTextManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Making\MakingSliderController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Making\FileMaker.cs" Line="134" Column="20" />
+      <File FileName="Assets\Scripts\Main\Graph\DataBase.cs" Line="39" Column="31" />
+      <File FileName="Assets\Scripts\Main\Graph\SimuManager.cs" Line="23" Column="48" />
+      <File FileName="Assets\Scripts\Main\Graph\GraphManager.cs" Line="215" Column="28" />
+      <File FileName="Assets\Scripts\Main\ExRateSliderController.cs" Line="13" Column="62" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
