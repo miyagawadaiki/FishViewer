@@ -26,15 +26,19 @@ public class RightGraphsManager : MonoBehaviour {
 		// Debug
 		Debug.Log("<color=green>Start() in RightGraphsManager</color>");
 
+		//PlayerPrefs.DeleteKey (PD::FileName.RIGHT_GRAPH_KEY);
+		int tmp = PlayerPrefs.GetInt (PD::FileName.RIGHT_GRAPH_KEY, 708);
+		// Debug
+		Debug.Log("<color=blue>tmp = " + tmp + "</color>");
 		foreach (GraphManager graph in graphs) {
-			graph.input_type = DataType.Speed;
-			graph.output_type = DataType.Acceleration;
+			graph.input_type = (DataType)(tmp/100);
+			graph.output_type = (DataType)(tmp%100);
 		}
 
 		input_dd.ClearOptions();
 		output_dd.ClearOptions();
 
-		foreach (String name in Enum.GetNames(typeof(DataType))) {
+		foreach (String name in PD::Parameter.GetNames()) {
 			input_dd.options.Add (new Dropdown.OptionData (name));
 			output_dd.options.Add (new Dropdown.OptionData (name));
 		}
@@ -83,11 +87,14 @@ public class RightGraphsManager : MonoBehaviour {
 		}
 
 		for (int i = 0; i < toggles.Length; i++) {
-			if (toggles [i].isOn)
+			if (toggles [i].isOn) {
 				graphs [i].Enable ();
-			else
+			} else {
 				graphs [i].Disable ();
+			}
 		}
+
+		PlayerPrefs.SetInt (PD::FileName.RIGHT_GRAPH_KEY, input_dd.value * 100 + output_dd.value);
 
 		Deactivate ();
 	}

@@ -36,14 +36,22 @@ public class BackgroundPanelController : MonoBehaviour {
 		for (int i = 0; i < PD::Parameter.FISH; i++)
 			id_dd.options.Add (new Dropdown.OptionData ("ID : " + (i+1)));
 		type_dd.ClearOptions ();
-		foreach (string name in Enum.GetNames(typeof(DataType)))
+		foreach (string name in PD::Parameter.GetNames())
 			type_dd.options.Add (new Dropdown.OptionData (name));
 		
 		bc = bg.GetComponent<BackgroundController> ();
-		toggle.isOn = bc.active;
-		id_dd.value = 1; id_dd.value = bc.id;
-		type_dd.value = 1; type_dd.value = (int)bc.type;
-		slider.value = bc.threshold;
+
+		//PlayerPrefs.DeleteKey (PD::FileName.BACKGROUND_GRAPH_KEY);
+		string line = PlayerPrefs.GetString (PD::FileName.BACKGROUND_GRAPH_KEY, "0,0,14,0.8");
+		// Debug
+		//Debug.Log("<color=blue>line = " + line + "</color>");
+		char[] separator = { ',' };
+		string[] tmp = line.Split (separator, StringSplitOptions.RemoveEmptyEntries);
+
+		toggle.isOn = Int32.Parse(tmp[0]) > 0 ? true : false;
+		id_dd.value = 1; id_dd.value = Int32.Parse(tmp[1]);
+		type_dd.value = 1; type_dd.value = Int32.Parse(tmp[2]);
+		slider.value = float.Parse (tmp [3]);
 
 		db = DataBase.Instance;
 		slider.minValue = db.GetMin (bc.type);
@@ -69,6 +77,12 @@ public class BackgroundPanelController : MonoBehaviour {
 		bc.id = id_dd.value;
 		bc.type = (DataType)type_dd.value;
 		bc.threshold = slider.value;
+
+		string s = (toggle.isOn ? "1" : "0") + ",";
+		s += bc.id + ",";
+		s += ((int)bc.type) + ",";
+		s += bc.threshold;
+		PlayerPrefs.SetString (PD::FileName.BACKGROUND_GRAPH_KEY, s);
 
 		Deactivate ();
 	}

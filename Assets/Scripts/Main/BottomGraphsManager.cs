@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+using PD = ProjectData;
 
 public class BottomGraphsManager : MonoBehaviour {
 	
@@ -58,27 +61,54 @@ public class BottomGraphsManager : MonoBehaviour {
 		rect.size = new Vector2 (rect.size.x * vec.x, rect.size.y * vec.y);
 		rect.center = center;
 
-		bgcs [0].graph.Enable (); bgcs [0].graph.output_type = DataType.Speed;
-		bgcs [1].graph.Enable (); bgcs [1].graph.output_type = DataType.FishValue;
-		bgcs [2].graph.Disable ();
-		bgcs [3].graph.Disable ();
-		bgcs [4].graph.Disable ();
+		string line = PlayerPrefs.GetString (PD::FileName.BOTTOM_GRAPH_KEY, "1007,1008,9,10,11");
+		char[] separator = { ',' };
+		string[] buf = line.Split (separator);
+		for (int i = 0; i < graphs.Length; i++) {
+			int a = Int32.Parse (buf [i]);
+			if (a / 1000 > 0) {
+				bgcs [i].graph.Enable ();
+				bgcs [i].toggle.isOn = true;
+			} else {
+				bgcs [i].graph.Disable ();
+				bgcs [i].toggle.isOn = false;
+			}
+
+			bgcs [i].graph.fish_id = (a % 1000) / 100;
+			bgcs [i].graph.output_type = (DataType)(a % 100);
+
+		}
+		//bgcs [0].graph.Enable (); //bgcs [0].graph.output_type = DataType.Speed;
+		//bgcs [1].graph.Enable (); //bgcs [1].graph.output_type = DataType.Acceleration;
+		//bgcs [2].graph.Disable ();
+		//bgcs [3].graph.Disable ();
+		//bgcs [4].graph.Disable ();
+
+
 
 		this.gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0) && !rect.Contains(Input.mousePosition - this.transform.position)) {
+		//if (Input.GetMouseButtonDown (0) && !rect.Contains(Input.mousePosition - this.transform.position))
 			//Deactivate ();
-		}
 	}
 
 	public void UpdataGraphs() {
+		string buf = "";
 		for (int i = 0; i < graphs.Length; i++) {
+			int a = 0;
 			bgcs [i].UpdateGraph ();
+			if (bgcs [i].graph.IsActive())
+				a = 1000;
+			a += bgcs [i].graph.fish_id * 100;
+			a += (int)bgcs [i].graph.output_type;
+			buf += a + ",";
 		}
 
+		PlayerPrefs.SetString (PD::FileName.BOTTOM_GRAPH_KEY, buf);
+			
 		Deactivate ();
 	}
 

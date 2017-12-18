@@ -8,8 +8,8 @@ using PD = ProjectData;
 
 public class BottomGraphController : MonoBehaviour {
 
-	[SerializeField]
-	private Toggle toggle = null;
+	//[SerializeField]
+	public Toggle toggle = null;
 	[SerializeField]
 	private Dropdown id_dd = null;
 	[SerializeField]
@@ -34,7 +34,7 @@ public class BottomGraphController : MonoBehaviour {
 		id_dd.value = 1;	id_dd.value = 0;
 
 		output_dd.ClearOptions ();
-		string[] names = Enum.GetNames (typeof(DataType));
+		string[] names = PD::Parameter.GetNames();
 		for (int i=(int)DataType.Distance;i<names.Length;i++)
 			output_dd.options.Add (new Dropdown.OptionData(names[i]));
 

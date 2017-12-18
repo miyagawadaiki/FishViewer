@@ -57,19 +57,24 @@ public class SimuManager : MonoBehaviour {
 			g.db = DataBase.Instance;
 		db.Init (PD::Parameter.STEPS);
 
-		stream_r.ReadLine ();
+		hoge = stream_r.ReadLine ().Split(split_words, StringSplitOptions.RemoveEmptyEntries);
+		int type_num = hoge.Length / PD::Parameter.FISH;
+		PD::Parameter.TYPES = new List<DataType> (type_num);
+		for (int i = 0; i < type_num; i++) {
+			PD::Parameter.TYPES.Add ((DataType)Enum.Parse (typeof(DataType), hoge [i]));
+		}
 
 		//Debug
 		//Debug.Log("steps = " + PD::Parameter.STEPS);
 
 		for (int i = 0; i < PD::Parameter.STEPS; i++) {
 			
-			string[] tmp = stream_r.ReadLine ().Split (split_words);
+			string[] tmp = stream_r.ReadLine ().Split (split_words, StringSplitOptions.RemoveEmptyEntries);
 			//Debug.Log (tmp.Length);
 
 			for (int j = 0; j < PD::Parameter.FISH; j++) {
-				for (int k = 0; k < Enum.GetNames (typeof(DataType)).Length; k++) {
-					db.SetData (j, (DataType)k, i, float.Parse(tmp[j * Enum.GetNames(typeof(DataType)).Length + k]));
+				for (int k = 0; k < PD::Parameter.TYPES.Count; k++) {
+					db.SetData (j, PD::Parameter.TYPES[k], i, float.Parse(tmp[j * PD::Parameter.TYPES.Count + k]));
 				}
 			}
 		}

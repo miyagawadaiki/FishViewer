@@ -74,6 +74,8 @@ public class GraphManager : MonoBehaviour {
 		db = DataBase.Instance;
 
 		if (!use_step) {
+			// Debug
+			Debug.Log("<color=blue>input_type = " + input_type + "</color>");
 			X_MIN = db.GetMin(input_type);
 			X_MAX = db.GetMax (input_type);
 		}
@@ -412,6 +414,10 @@ public class GraphManager : MonoBehaviour {
 
 		foreach (GameObject obj in samples)
 			obj.transform.position += new Vector3 (0f, 0f, 10f);
+	}
+
+	public bool IsActive() {
+		return my_enabled;
 	}
 
 	public string GetSampleValue(Vector2 vec) {
