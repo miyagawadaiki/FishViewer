@@ -143,20 +143,20 @@ public class FileMaker : MonoBehaviour {
 		//}
 			
 		string line = stream_r.ReadLine ();
-		string[] tmp = line.Split (split_words);
-		if (tmp.Length < fish * 3) {
-			PD::Parameter.FISH = tmp.Length / 3;
-			fish = tmp.Length / 3;
-		}
+		string[] tmp = line.Split (split_words, StringSplitOptions.RemoveEmptyEntries);
+		/*if (tmp.Length < fish * 2) {
+			PD::Parameter.FISH = tmp.Length / 2;
+			fish = tmp.Length / 2;
+		}*/
 
 		for (int i = 0; i < fish; i++) {
-			pos [i] = new Vector2 (float.Parse (tmp [i * 3]), float.Parse (tmp [i * 3 + 1]));
+			pos [i] = new Vector2 (float.Parse (tmp [i * 2]), float.Parse (tmp [i * 2 + 1]));
 		}
 
 		line = stream_r.ReadLine ();
-		tmp = line.Split (split_words);
+		tmp = line.Split (split_words, StringSplitOptions.RemoveEmptyEntries);
 		for (int i = 0; i < fish; i++) {
-			n_pos [i] = new Vector2 (float.Parse (tmp [i * 3]), float.Parse (tmp [i * 3 + 1]));
+			n_pos [i] = new Vector2 (float.Parse (tmp [i * 2]), float.Parse (tmp [i * 2 + 1]));
 			vel [i] = (new Vector2 (n_pos[i].x - pos[i].x, n_pos[i].y - pos[i].y)) / dt;
 			p_sp [i] = vel [i].magnitude;
 		}
@@ -179,13 +179,13 @@ public class FileMaker : MonoBehaviour {
 
 			string line = stream_r.ReadLine ();
 
-			string[] tmp = line.Split (split_words);
+			string[] tmp = line.Split (split_words, StringSplitOptions.RemoveEmptyEntries);
 
 			string write_buf = "";
 
 			for (int i = 0; i < fish; i++) {
 				// posX, posY, velX, velY, accX, accY
-				n_n_pos [i] = new Vector2 (float.Parse (tmp [i * 3]), float.Parse (tmp [i * 3 + 1]));
+				n_n_pos [i] = new Vector2 (float.Parse (tmp [i * 2]), float.Parse (tmp [i * 2 + 1]));
 				n_vel [i] = (new Vector2 (n_n_pos [i].x - n_pos [i].x, n_n_pos [i].y - n_pos [i].y)) / dt;
 				acc [i] = (new Vector2 (n_vel [i].x - vel [i].x, n_vel [i].y - vel [i].y)) / dt;
 				//Debug.Log ("acc : " + acc [i].ToString ());

@@ -32,6 +32,8 @@ public class BackgroundPanelController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		db = DataBase.Instance;
+
 		id_dd.ClearOptions ();
 		for (int i = 0; i < PD::Parameter.FISH; i++)
 			id_dd.options.Add (new Dropdown.OptionData ("ID : " + (i+1)));
@@ -42,20 +44,26 @@ public class BackgroundPanelController : MonoBehaviour {
 		bc = bg.GetComponent<BackgroundController> ();
 
 		//PlayerPrefs.DeleteKey (PD::FileName.BACKGROUND_GRAPH_KEY);
-		string line = PlayerPrefs.GetString (PD::FileName.BACKGROUND_GRAPH_KEY, "0,0,14,0.8");
+		string line = PlayerPrefs.GetString (PD::FileName.BACKGROUND_GRAPH_KEY, "0,0,6,10");
 		// Debug
 		//Debug.Log("<color=blue>line = " + line + "</color>");
 		char[] separator = { ',' };
 		string[] tmp = line.Split (separator, StringSplitOptions.RemoveEmptyEntries);
 
-		toggle.isOn = Int32.Parse(tmp[0]) > 0 ? true : false;
-		id_dd.value = 1; id_dd.value = Int32.Parse(tmp[1]);
-		type_dd.value = 1; type_dd.value = Int32.Parse(tmp[2]);
-		slider.value = float.Parse (tmp [3]);
+		int id = Int32.Parse(tmp[1]) < PD::Parameter.FISH ? Int32.Parse(tmp[1]) : 0;
+		DataType t = PD::Parameter.Contains ((DataType)Int32.Parse (tmp [2])) ? (DataType)Int32.Parse (tmp [2]) : DataType.Distance;
+		float th = (db.GetMin(t) + db.GetMax(t)) / 2;
 
-		db = DataBase.Instance;
-		slider.minValue = db.GetMin (bc.type);
-		slider.maxValue = db.GetMax (bc.type);
+		toggle.isOn = Int32.Parse(tmp[0]) > 0 ? true : false;
+		id_dd.value = 1; id_dd.value = id;
+		type_dd.value = 1; type_dd.value = (int)t;
+		slider.minValue = db.GetMin (t);
+		slider.maxValue = db.GetMax (t);
+		slider.value = th;
+		UpdateParameter ();
+
+		//slider.minValue = db.GetMin (bc.type);
+		//slider.maxValue = db.GetMax (bc.type);
 		min_text.text = db.GetMin (bc.type) + "";
 		max_text.text = db.GetMax (bc.type) + "";
 		thre_text.text = "Threshold : " + (float)((int)(slider.value * 100) / 100f);

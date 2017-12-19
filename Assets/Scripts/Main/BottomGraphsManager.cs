@@ -61,7 +61,7 @@ public class BottomGraphsManager : MonoBehaviour {
 		rect.size = new Vector2 (rect.size.x * vec.x, rect.size.y * vec.y);
 		rect.center = center;
 
-		string line = PlayerPrefs.GetString (PD::FileName.BOTTOM_GRAPH_KEY, "1007,1008,9,10,11");
+		string line = PlayerPrefs.GetString (PD::FileName.BOTTOM_GRAPH_KEY, "1007,1008,7,7,7");
 		char[] separator = { ',' };
 		string[] buf = line.Split (separator);
 		for (int i = 0; i < graphs.Length; i++) {
@@ -74,8 +74,15 @@ public class BottomGraphsManager : MonoBehaviour {
 				bgcs [i].toggle.isOn = false;
 			}
 
-			bgcs [i].graph.fish_id = (a % 1000) / 100;
-			bgcs [i].graph.output_type = (DataType)(a % 100);
+			if((a % 1000) / 100 < PD::Parameter.FISH)
+				bgcs [i].graph.fish_id = (a % 1000) / 100;
+			else
+				bgcs [i].graph.fish_id = 0;
+
+			if (PD::Parameter.Contains ((DataType)(a % 100)))
+				bgcs [i].graph.output_type = (DataType)(a % 100);
+			else
+				bgcs [i].graph.output_type = DataType.Distance;
 
 		}
 		//bgcs [0].graph.Enable (); //bgcs [0].graph.output_type = DataType.Speed;

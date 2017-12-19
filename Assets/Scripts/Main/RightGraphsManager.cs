@@ -30,9 +30,18 @@ public class RightGraphsManager : MonoBehaviour {
 		int tmp = PlayerPrefs.GetInt (PD::FileName.RIGHT_GRAPH_KEY, 708);
 		// Debug
 		Debug.Log("<color=blue>tmp = " + tmp + "</color>");
+		DataType ti, to;
+		if (PD::Parameter.Contains ((DataType)(tmp / 100)) && PD::Parameter.Contains ((DataType)(tmp % 100))) {
+			ti = (DataType)(tmp / 100);
+			to = (DataType)(tmp % 100);
+		} else {
+			ti = DataType.Speed;
+			to = DataType.Acceleration;
+		}
+
 		foreach (GraphManager graph in graphs) {
-			graph.input_type = (DataType)(tmp/100);
-			graph.output_type = (DataType)(tmp%100);
+			graph.input_type = ti;
+			graph.output_type = to;
 		}
 
 		input_dd.ClearOptions();
