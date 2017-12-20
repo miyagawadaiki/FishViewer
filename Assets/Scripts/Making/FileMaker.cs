@@ -323,6 +323,10 @@ public class FileMaker : MonoBehaviour {
 		return true;
 	}
 
+	public void GoFileMake() {
+		MySceneManager.GoFileMake ();
+	}
+
 	private float CalcAngle(Vector2 a, Vector2 b) {
 		float cos = (a.x * b.x + a.y * b.y) / (a.magnitude * b.magnitude);
 		if (cos > 1f)
