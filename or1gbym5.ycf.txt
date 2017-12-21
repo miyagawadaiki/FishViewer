@@ -1,0 +1,30 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch change_gui
+# Your branch is up-to-date with 'origin/change_gui'.
+#
+# Changes to be committed:
+#	modified:   Assets/Scenes/FileRead.unity
+#	modified:   Assets/Scripts/Main/Graph/SimuManager.cs
+#	modified:   Assets/Scripts/Making/FileMaker.cs
+#	modified:   Builds/FishViewer_1_4_1/build_Data/PlayerConnectionConfigFile
+#	modified:   Builds/FishViewer_1_4_1/build_Data/globalgamemanagers
+#	modified:   Builds/FishViewer_1_4_1/build_Data/level1
+#	modified:   Builds/FishViewer_1_4_1/build_Data/level3
+#	modified:   Builds/FishViewer_1_4_1/build_Data/output_log.txt
+#	modified:   Builds/FishViewer_1_4_1/build_Data/sharedassets1.assets
+#	modified:   FishViewer1_3.userprefs
+#	modified:   Library/CurrentLayout.dwlt
+#	modified:   Library/CurrentMaximizeLayout.dwlt
+#	modified:   Library/LastBuild.buildreport
+#	modified:   Library/ScriptAssemblies/Assembly-CSharp.dll
+#	modified:   Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+#	modified:   Library/assetDatabase3
+#	modified:   Library/metadata/00/00000000000000004000000000000000
+#	modified:   Library/metadata/b5/b5c61d3b37b59cb4882092175b69270d
+#	modified:   Library/metadata/d7/d79c8439005524649ac22379f28f6b2a
+#	modified:   obj/Debug/Assembly-CSharp.dll
+#	modified:   obj/Debug/Assembly-CSharp.pdb
+#
+
