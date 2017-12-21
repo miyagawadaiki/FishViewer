@@ -8,11 +8,9 @@ using PD = ProjectData;
 public class FileReadManager : MonoBehaviour {
 
 	[SerializeField]
-	private Text n_path = null;
+	private PathManager n_path = null;
 	[SerializeField]
-	private Text n_name = null;
-	[SerializeField]
-	private FileMakeError fme = null;
+	private InputField n_name = null;
 
 	// Use this for initialization
 	void Start () {
@@ -25,13 +23,7 @@ public class FileReadManager : MonoBehaviour {
 	}
 
 	public void Read() {
-		if (System.IO.File.Exists (n_path.text + "/" + n_name.text) == false) {
-			fme.ShowError ("ファイルが存在しません.\n正しいファイル名を記入してください.");
-			Debug.Log ("Error2");
-			return;
-		}
-
-		PlayerPrefs.SetString (PD::FileName.WRITE_PATH_KEY, n_path.text);
+		PlayerPrefs.SetString (PD::FileName.WRITE_PATH_KEY, n_path.GetPath());
 		PlayerPrefs.SetString (PD::FileName.WRITE_NAME_KEY, n_name.text);
 
 		MySceneManager.GoMain ();

@@ -31,11 +31,11 @@ public class InputFieldInitializer : MonoBehaviour {
 			key = PD::FileName.WRITE_NAME_KEY;
 			break;
 		case BoxType.FishCount:
-			key = PD::FileName.FISH_COUNT_KEY;
-			break;
+			input_f.text = PD::Parameter.FISH + "";
+			return;
 		case BoxType.DeltaTime:
-			key = PD::FileName.DELTA_TIME_KEY;
-			break;
+			input_f.text = PD::Parameter.DELTA_TIME + "";
+			return;
 		}
 
 		input_f.text = PlayerPrefs.GetString (key, "");

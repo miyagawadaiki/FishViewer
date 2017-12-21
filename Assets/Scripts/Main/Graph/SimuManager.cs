@@ -189,7 +189,7 @@ public class SimuManager : MonoBehaviour {
 	}
 
 	public void Step(int s) {
-		if (s < 0 || s > PD::Parameter.STEPS)
+		if (s < 0 || IsEnd())
 			return;
 		
 		step = s;

@@ -50,7 +50,10 @@
      <Compile Include="Assets\Scripts\FileMake\FileMakeError.cs" />
      <Compile Include="Assets\Scripts\FileMake\FileMakeManager.cs" />
      <Compile Include="Assets\Scripts\FileMake\FileNameTextController.cs" />
+     <Compile Include="Assets\Scripts\FileMake\FileNode.cs" />
+     <Compile Include="Assets\Scripts\FileMake\FolderViewController.cs" />
      <Compile Include="Assets\Scripts\FileMake\InputFieldInitializer.cs" />
+     <Compile Include="Assets\Scripts\FileMake\PathManager.cs" />
      <Compile Include="Assets\Scripts\FileRead\FileReadManager.cs" />
      <Compile Include="Assets\Scripts\Main\BackgroundController.cs" />
      <Compile Include="Assets\Scripts\Main\BackgroundPanelController.cs" />

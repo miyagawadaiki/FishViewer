@@ -271,8 +271,12 @@ public class FileMaker : MonoBehaviour {
 
 
 				// wall value
+				float wall_angle = CalcAngle(pos[i], vel[i]);
+				float sin = Mathf.Sin (wall_angle);
+				float wall_value = dist / PD::Parameter.TANK_R * 0.5f + ((sin + 1f) / 2f) * 0.5f;
+
 				if(PD::Parameter.Contains(DataType.WallValue))
-					write_buf += (dist / PD::Parameter.TANK_R) + ",";
+					write_buf += wall_value + ",";
 
 
 
@@ -321,6 +325,10 @@ public class FileMaker : MonoBehaviour {
 		}
 
 		return true;
+	}
+
+	public void GoFileMake() {
+		MySceneManager.GoFileMake ();
 	}
 
 	private float CalcAngle(Vector2 a, Vector2 b) {

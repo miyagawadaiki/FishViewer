@@ -1,20 +1,24 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Main\BackgroundPanelController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Making\FileMaker.cs">
     <Files>
       <File FileName="Assets\Scripts\ProjectData.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DataType.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Making\FileMaker.cs" Line="182" Column="81" />
-      <File FileName="Assets\Scripts\Main\Graph\SimuManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Making\FileMaker.cs" Line="279" Column="29" />
+      <File FileName="Assets\Scripts\Main\Graph\SimuManager.cs" Line="192" Column="23" />
       <File FileName="Assets\Scripts\Main\Graph\DataBase.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Main\Graph\GraphManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Main\RightGraphsManager.cs" Line="41" Column="3" />
-      <File FileName="Assets\Scripts\Main\BottomGraphController.cs" Line="10" Column="2" />
-      <File FileName="Assets\Scripts\Main\BottomGraphsManager.cs" Line="85" Column="52" />
+      <File FileName="Assets\Scripts\Main\RightGraphsManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Main\BottomGraphController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Main\BottomGraphsManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Main\CircleGraphsManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Main\MouseDragController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FileMake\FileMakeManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Main\BackgroundPanelController.cs" Line="66" Column="5" />
+      <File FileName="Assets\Scripts\Main\BackgroundPanelController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FileMake\FileNode.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FileMake\PathManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FileMake\FolderViewController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FileRead\FileReadManager.cs" Line="13" Column="35" />
+      <File FileName="Assets\Scripts\Main\BackgroundController.cs" Line="39" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
