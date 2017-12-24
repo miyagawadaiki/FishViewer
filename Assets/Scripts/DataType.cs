@@ -23,6 +23,53 @@ public enum DataType {
 	TimeDist,
 }
 
+public class ReadDataHash {
+
+	private static int MAX = 100;
+	private static int cur_idx;
+	private static string[] names;
+
+	private ReadDataHash() {
+		Init ();
+	}
+
+	public static void Init() {
+		cur_idx = 0;
+		names = new string[MAX];
+		for(int i=0;i<MAX;i++)
+			names[i] = "";
+	}
+
+	public static int GetIndex(string name) {
+		for (int i = 0; i < cur_idx; i++) {
+			if (names [i] == name)
+				return i;
+		}
+		return -1;
+	}
+
+	public static string GetName(int i) {
+		return names [i];
+	}
+
+	public static void Add(string name) {
+		names [cur_idx] = name;
+		cur_idx++;
+	}
+
+	public static int Count() {
+		return cur_idx;
+	}
+
+	public static string[] GetNamesArray() {
+		string[] ret = new string[cur_idx];
+		for (int i = 0; i < cur_idx; i++) {
+			ret [i] = names [i];
+		}
+		return ret;
+	}
+}
+
 public class DataTypeEx {
 
 	public static int Count() {
